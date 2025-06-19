@@ -1,0 +1,8 @@
+services:
+  terraform:
+    image: hashicorp/terraform:1.8
+    working_dir: /workspace
+    volumes:
+      - ./terraform:/workspace
+    env_file:
+      - ./.env
